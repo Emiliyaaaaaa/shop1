@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Добавление товара</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Добавление товара</h1>
+        <form method="POST">
+            <label for="photo"></label> <input type="file" class="form-control" name="photo" id="photo" placeholder="Добавьте фото"><br>
+            <label for="title"></label><input type="text" class="form-control" name="title" id="title" placeholder="Введите название"><br>
+            <label for="description"></label><input type="text" class="form-control" name="description" id="description" placeholder="Введите описание"><br>
+            <label for="price"></label><input type="number" class="form-control" name="price" id="price" placeholder="Введите цену"><br>
+            <button class="btn btn-success" type="submit">Добавить товар</button>
+        </form>
+    </div>
+{% endblock %}
